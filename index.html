@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEWT - Le Goat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a022d4a632.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-text" data-text="NEWT">NEWT</div>
+      <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+      <div class="loader-percent" id="loaderPercent">0%</div>
+    </div>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-t">N</span><span class="logo-rest">EWT</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link" data-section="hero">Accueil</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">Profil</a></li>
+      <li><a href="#stats" class="nav-link" data-section="stats">Stats</a></li>
+      <li><a href="#career" class="nav-link" data-section="career">Carrière</a></li>
+    </ul>
+    <div class="nav-burger" id="navBurger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" class="mobile-link">Accueil</a></li>
+      <li><a href="#about" class="mobile-link">Profil</a></li>
+      <li><a href="#stats" class="mobile-link">Stats</a></li>
+      <li><a href="#career" class="mobile-link">Carrière</a></li>
+    </ul>
+  </div>
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-gradient"></div>
+      <div class="hero-lines">
+        <div class="h-line" style="--d:0s"></div>
+        <div class="h-line" style="--d:.3s"></div>
+        <div class="h-line" style="--d:.6s"></div>
+        <div class="h-line" style="--d:.9s"></div>
+        <div class="h-line" style="--d:1.2s"></div>
+        <div class="v-line" style="--d:.1s"></div>
+        <div class="v-line" style="--d:.4s"></div>
+        <div class="v-line" style="--d:.7s"></div>
+        <div class="v-line" style="--d:1s"></div>
+        <div class="v-line" style="--d:1.3s"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up" data-delay="200">
+        <span class="tag-dot"></span>Joueur Compétitif
+      </div>
+      <h1 class="hero-title reveal-up" data-delay="400">
+        <span class="title-line title-big">NEWT</span>
+        <span class="title-line title-sub">Le Phénomène</span>
+      </h1>
+      <p class="hero-desc reveal-up" data-delay="600">
+        NEWT est un joueur compétitif Fortnite, au futur il souhaite devenir LE meilleur.
+      </p>
+      <div class="hero-actions reveal-up" data-delay="800">
+        <a href="#about" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Découvrir</a>
+        <a href="https://discord.gg/KmrntsSM6d" target="_blank" class="btn btn-outline"><i class="fa-brands fa-discord"></i> Discord</a>
+      </div>
+      <div class="hero-scroll reveal-up" data-delay="1000">
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+        </div>
+        <span>Défiler pour découvrir</span>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <svg viewBox="0 0 200 200" class="badge-svg">
+          <defs>
+            <path id="circlePath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+          </defs>
+          <text>
+            <textPath href="#circlePath" startOffset="0%">
+            NEWT • JOUEUR OFFICIEL • DEPUIS 2019
+            </textPath>
+          </text>
+        </svg>
+        <div class="badge-center">★</div>
+      </div>
+    </div>
+    <div class="hero-number">
+      <span class="num-label">N°</span>
+      <span class="num-value" id="heroNumber">001</span>
+    </div>
+  </section>
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack">
+      <span>NEWT</span>
+      <span class="sep">✦</span>
+      <span>UNREAL</span>
+      <span class="sep">✦</span>
+      <span>PC</span>
+      <span class="sep">✦</span>
+      <span>FORTNITE</span>
+      <span class="sep">✦</span>
+      <span>COMPETITION</span>
+      <span class="sep">✦</span>
+      <span>UNITE1</span>
+      <span class="sep">✦</span>
+      <span>NEWT</span>
+      <span class="sep">✦</span>
+      <span>UNREAL</span>
+      <span class="sep">✦</span>
+      <span>PC</span>
+      <span class="sep">✦</span>
+      <span>FORTNITE</span>
+      <span class="sep">✦</span>
+      <span>COMPETITION</span>
+      <span class="sep">✦</span>
+      <span>UNITE1</span>
+      <span class="sep">✦</span>
+    </div>
+  </div>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Profil <em>Complet</em></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="profile-card">
+            <div class="profile-placeholder">
+              <div class="profile-initials"><img src="NEWT.png" alt="NEWT render"></div>
+              <div class="profile-glow"></div>
+            </div>
+            <div class="profile-info-bar">
+              <div class="pib-item">
+                <span class="pib-label">Statut</span>
+                <span class="pib-value active-dot">Actif</span>
+              </div>
+              <div class="pib-item">
+                <span class="pib-label">Depuis</span>
+                <span class="pib-value">2019</span>
+              </div>
+              <div class="pib-item">
+                <span class="pib-label">Pays</span>
+                <span class="pib-value">FR/INT</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-quote">
+            <blockquote>
+              "Dans l’e-sport Fortnite, chaque build, chaque décision en jeu reflète une discipline mentale et une créativité intense. Comme les grands artistes, les meilleurs joueurs allient technique, émotion et vision stratégique pour s’élever."
+            </blockquote>
+            <cite>— Newt</cite>
+          </div>
+        </div>
+        <div class="about-info reveal-right">
+          <div class="info-tabs">
+            <button class="tab-btn active" data-tab="bio">Biographie</button>
+            <button class="tab-btn" data-tab="skills">Compétences</button>
+          </div>
+          <div class="tab-content active" id="tab-bio">
+            <p class="bio-text">
+              Je m’appelle <strong>Newt</strong>, j’ai 13 ans et je joue à Fortnite depuis 2019. À mes débuts, je cherchais simplement un jeu avec des armes pour m’amuser, sans me douter que ce jeu allait devenir une véritable passion et un défi quotidien. Mes premières parties étaient catastrophiques : je perdais presque tout le temps et j’avais l’impression d’être à la traîne par rapport aux autres. Mais chaque défaite m’a appris quelque chose sur moi-même, et petit à petit, je me suis amélioré.
+            </p>
+            <p class="bio-text">
+              Mon parcours n’a pas été simple. Quand je suis passé sur Xbox, je faisais face à des limitations matérielles importantes : je jouais sur une petite télé dans mon salon, avec une chaise en bois et aucun vrai setup. Malgré ces obstacles, ma volonté de progresser et de comprendre le jeu n’a jamais faibli. C’est seulement lorsque j’ai reçu mon PC que j’ai vraiment commencé à m’investir sérieusement dans le jeu compétitif. Grâce à ce matériel, j’ai pu participer à mes premiers tournois et affiner mon style de jeu.
+            </p>
+            <p class="bio-text">
+              Aujourd’hui, je suis un <strong>fragger</strong> agressif. Mon style repose sur la prise d’initiatives et la pression constante sur mes adversaires. Ma philosophie en jeu est simple : persévérance, même si les progrès prennent du temps. Je m’inspire de joueurs comme Podasai et Peterbot, qui combinent technique et mental de compétiteur. Mon objectif est clair : inspirer la peur à tous ceux qui me croisent en game. Je veux que chaque joueur sache qu’il affronte un adversaire redoutable dès le premier instant.
+            </p>
+            <p class="bio-text">
+              En dehors du jeu, je reste concentré sur mes performances et mon évolution. Je souhaite devenir joueur professionnel, et je ne me contente pas de viser un simple statut pro : je veux être le meilleur des pros. À court terme, je me vois dans une excellente équipe semi-pro, mais si je persévère, rien ne m’empêche de gravir les échelons et de devenir une référence incontournable dans la scène compétitive Fortnite.
+            </p>
+            <p class="bio-text">
+              Chaque jour, je m’entraîne, je participe aux tournois disponibles, et je continue de perfectionner mon jeu. Mon ambition est grande, mon style est agressif, et ma détermination est sans limite. Avec chaque victoire et chaque match, je rapproche un peu plus de mon rêve ultime : laisser ma marque dans <strong>l’e-sport</strong> et montrer que, même à 13 ans, un joueur peut inspirer crainte et respect sur le champ de bataille.
+            </p>
+          </div>
+          <div class="tab-content" id="tab-skills">
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">AIM</span>
+                  <span class="skill-score">79%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="98"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">MÉCHANIQUE</span>
+                  <span class="skill-score">82%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="96"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">FIGHT</span>
+                  <span class="skill-score">84%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">INTELLIGENCE</span>
+                  <span class="skill-score">81%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">MENTALITÉ</span>
+                  <span class="skill-score">87%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="99"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">POLYVALENCE</span>
+                  <span class="skill-score">82%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stats-section" id="stats">
+    <div class="stats-bg">
+      <div class="stats-grain"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">02</span>
+        <h2 class="section-title">STATISTIQUES <em>Clés</em></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal-up" data-delay="0">
+          <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="stat-number" data-target="134">134</div>
+          <div class="stat-label">Top 1</div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="100">
+          <div class="stat-icon"><i class="fa-solid fa-user"></i></div>
+          <div class="stat-number" data-target="3950">3950</div>
+          <div class="stat-label">Eliminations</div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill" data-width="68"></div></div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="200">
+          <div class="stat-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+          <div class="stat-number" data-target="0">0$</div>
+          <div class="stat-label">Earnings</div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill" data-width="48"></div></div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="300">
+          <div class="stat-icon"><i class="fa-solid fa-skull"></i></div>
+          <div class="stat-number" data-target="7">7</div>
+          <div class="stat-label">K/D</div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="400">
+          <div class="stat-icon"><i class="fa-brands fa-web-awesome"></i></div>
+          <div class="stat-number" data-target="0">0</div>
+          <div class="stat-label">Top 1 Cup</div>
+          <div class="stat-bar-wrap"><div class="stat-bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="stat-card featured reveal-up" data-delay="500">
+          <div class="stat-icon"><img src="lVhYVT.png" alt="logo unreal"></div>
+          <div class="stat-number">UNREAL</div>
+          <div class="stat-label">RANK</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="career" id="career">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Parcour <em>Fortnite</em></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-date">2019</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag">Débuts</span>
+              <h3 class="tc-title">Le Commencement</h3>
+            </div>
+            <p>J’installe Fortnite pour la première fois. Mon niveau est catastrophique et je n’ai encore aucune conscience de l’existence de l’e-sport.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag">Progressions</span>
+              <h3 class="tc-title">Les premiers progrès</h3>
+            </div>
+            <p>Je commence à m’améliorer, même si mon niveau reste encore faible. J’apprends à mieux comprendre le jeu et je découvre progressivement l’univers de l’e-sport.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag">Ambitions</span>
+              <h3 class="tc-title">le Rêve</h3>
+            </div>
+            <p>Je casse mon ancien PC et je dois jouer sur Nintendo Switch. Je rêve déjà de faire de l’e-sport, mais dans ces conditions, c’est impossible.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag">But</span>
+              <h3 class="tc-title">La motivation</h3>
+            </div>
+            <p>Je revends ma Switch pour acheter une Xbox. Je joue dans mon salon, sur une chaise en bois, sans vrai bureau. Malgré ça, je continue de progresser et l’envie de faire de l’e-sport est toujours là.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag">Optimisation</span>
+              <h3 class="tc-title">Les améliorations</h3>
+            </div>
+            <p>Je commence à prendre le mode classé au sérieux. J’achète un bureau pour installer ma Xbox, une petite télé et un vieux clavier/souris. Ce n’est pas parfait, mais je commence à structurer mon setup et mon entraînement.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag">Avance</span>
+              <h3 class="tc-title">L'Investissement</h3>
+            </div>
+            <p>Fatigué de jouer sur une Xbox limitée à 60 FPS, j’investis enfin dans un PC à Noël. Cela me permet de participer à mes premières compétitions (cups). Les résultats ne sont pas encore incroyables, mais je franchis un cap.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left current">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag current-tag">Fin</span>
+              <h3 class="tc-title"> La Chute</h3>
+            </div>
+            <p>Je joue énormément, principalement en ranked, et je participe à quelques cups par-ci par-là. Cependant, après la saison 2 du chapitre 5, je ressens une baisse de motivation et je décide de faire une grosse pause.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left current">
+          <div class="timeline-date">2026</div>
+          <div class="timeline-content">
+            <div class="tc-head">
+              <span class="tc-tag current-tag">Recommencement</span>
+              <h3 class="tc-title">Je me Relève</h3>
+            </div>
+            <p>Le 11 février, je reprends le jeu avec un ami. On décide de s’entraîner sérieusement avec un objectif clair : devenir professionnels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <span class="logo-t">N</span><span class="logo-rest">EWT</span>
+        <span class="footer-tagline">Joueur Fortnite — Compétitif</span>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">Profil</a>
+        <a href="#stats">Stats</a>
+        <a href="#career">Carrière</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p class="footer-legal">
+        © 2026 Ghost. Tous droits réservés. Site à caractère professionnel.
+        Toutes les collaborations sont soumises à accord préalable et vérification d'identité.
+      </p>
+    </div>
+  </footer>
+  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
